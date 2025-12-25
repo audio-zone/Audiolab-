@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AudioLab Studio</title>
+</head>
+<body>
+  <h1>AudioLab Studio</h1>
+  <p>Ye basic test page hai. Agar ye Render par dikhe, to Flask sahi chal raha hai.</p>
+  <form id="ttsForm" method="post" action="/speak">
+    <textarea name="text" rows="4" cols="40" placeholder="Yahan text likho..."></textarea><br />
+    <select name="lang">
+      <option value="hi">Hindi</option>
+      <option value="ur">Urdu</option>
+      <option value="en">English</option>
+    </select><br />
+    <button type="submit">Generate Audio</button>
+  </form>
+</body>
+</html>
